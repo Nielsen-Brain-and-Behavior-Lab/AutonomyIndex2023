@@ -1,4 +1,4 @@
-# Data Visualization Scripts for the HCP Dataset
+# Data Visualization Scripts for the NSD Dataset
 
 ## Description
 Scripts used to visualize the Kong2019 individual parcellations.
