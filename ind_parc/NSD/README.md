@@ -1,4 +1,4 @@
-# Kong2019 Individual Parcellations (MS-HBM) in the HCP Dataset
+# Kong2019 Individual Parcellations (MS-HBM) in the NSD Dataset
 
 ## Contents
 1. CBIG_preproc_tested_config_funconn.sh Configuration file for setting up CBIG environment.
