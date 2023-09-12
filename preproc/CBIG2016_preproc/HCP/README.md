@@ -12,5 +12,6 @@ The following scripts were used to implement the single-echo fMRI preprocessing 
 5. preproc_job.sh Job script to run the preprocessing pipeline.
 6. CBIG_preproc_tested_config_funconn.sh This is a configuration script provided by CBIG. This script set the $CBIG_CODE_DIR variable in addition to paths to software.
 
-#Tutorial Guide
+# Tutorial Guide
+
 A tutorial guide to using this preprocessing pipeline is available on NeuroDocs: https://neurodocs.readthedocs.io/en/latest/cprep/cprep_ov.html
