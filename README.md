@@ -7,9 +7,9 @@ The aims of this study were twofold: to examine which networks are specialized w
 <Coming Soon!>
 
 ## Getting Started 
-Scripts are organized in the following folders: preproc, ind_parc, fc_matrices, ai_spec, reliability, and stats.
+Scripts are organized in the following folders: preproc, ind_parc, fc_matrices, ai_spec, dAI, reliability, and stats.
 
-The preproc folder contains scripts for data organization, FreeSurfer, resting-state preprocessing (the CBIG2016 pipeline), and tSNR calculation. The ind_parc folder contains scripts for running the Kong2019 MS-HBM pipeline and visualization. The fc_matrices folder contains scripts for generating individual-averaged functional connectivity matrices. The ai_spec folder contains scripts for calculating the autonomy index and deconstructed autonomy index. The reliability folder contains scripts used to run various reliability analyses. The stats folder contains scripts for manuscript figure generation and statistical analyses. README files can be found in each folder, so please see those for additional details.
+The preproc folder contains scripts for data organization, FreeSurfer, resting-state preprocessing (the CBIG2016 pipeline), and tSNR calculation. The ind_parc folder contains scripts for running the Kong2019 MS-HBM pipeline and visualization. The fc_matrices folder contains scripts for generating individual-averaged functional connectivity matrices. The ai_spec folder contains scripts for calculating the autonomy index using individual parcellations. The dAI folder contains scripts for calculating the deconstructed autonomy index. The reliability folder contains scripts used to run various reliability analyses. The stats folder contains scripts for manuscript figure generation and statistical analyses. README files can be found in each folder, so please see those for additional details.
 
 ## Tutorial Guide 
 Step-by-step walkthroughs are avaialble for the preprocessing and MS-HBM parcellation steps on [NeuroDocs](https://neurodocs.readthedocs.io/en/latest/).
