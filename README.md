@@ -4,7 +4,7 @@
 The aims of this study were twofold: to examine which networks are specialized when an individualized approach is taken, and to identify which connections are contributing the most to a given network's specialization. These aims were addressed through implementing the autonomy index across three datasets, and with a novel method of deconstructing network specialization.
 
 ## Associated Publications 
-<Coming Soon!>
+bioRxiv: https://www.biorxiv.org/content/10.1101/2024.02.13.580153v1
 
 ## Getting Started 
 Scripts are organized in the following folders: preproc, ind_parc, fc_matrices, ai_spec, dAI, and stats.
