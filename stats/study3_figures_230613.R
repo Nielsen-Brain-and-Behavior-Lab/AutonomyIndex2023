@@ -2951,7 +2951,49 @@ study3_demos <- subset(study3, NewNetwork=="1")
              path = "C:/Users/maddy/Box/Autism_Hemispheric_Specialization/Figures/study3_figures/png_figures", dpi = 300)
       
 
-
+#SET 8: EVEN/ODD only, 3 columns
+      #FIGURE 8.1: LH EVEN/ODD
+      eo_lh_ai_icc_long <- subset(eo_lh_ai_icc_long, ITERATION!="RESTTASK")
+      ggplot(eo_lh_ai_icc_long, aes(x=factor(ITERATION, level=c('TASKTASK', 'RESTREST', 'TASKREST')), y=LH_AI_ICC))+
+        geom_line(aes(group=SUBJID))+
+        labs(x = '', y = 'LH AI ICC Even/Odd Runs')+
+        #scale_colour_manual(values=CBIG_Palette)+
+        #scale_fill_manual(values=CBIG_Palette)+
+        geom_point(aes(fill=SUBJID), colour="black", pch=21, size=2.5)+
+        scale_y_continuous(limits = c(0.13, 1.0))+
+        scale_x_discrete(labels=c("Task-Task", "Rest-Rest", "Task-Rest")) +
+        theme_bw()+
+        theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
+        theme(axis.title = element_text(colour = "black", size=10), axis.text.y =element_text(colour = "black", angle = 90, hjust = 0.6), 
+              axis.text.x = element_text(colour = "black", hjust = 0.5, vjust=.8, size=10, angle = 0), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
+              legend.position ="none", legend.title=element_blank(), legend.text=element_blank(), 
+              legend.background = element_rect(fill="white", size=0.5) , axis.line = element_line(colour = "black", size = 1, linetype = "solid"), 
+              axis.ticks = element_line(colour = "black", size =1, linetype ="solid"), panel.border = element_blank(), panel.background = element_blank())
+      ggsave(filename = paste("NSD_SET8_1_LH_AI_ICC_ALL_EVENODD_230915.png"), width = 3.35, height = 3.35,
+             path = "C:/Users/maddy/Box/Autism_Hemispheric_Specialization/Figures/study3_figures/png_figures", dpi = 300)
+      
+      
+      #FIGURE 8.2: RH EVEN/ODD
+      eo_rh_ai_icc_long <- subset(eo_rh_ai_icc_long, ITERATION!="RESTTASK")
+      ggplot(eo_rh_ai_icc_long, aes(x=factor(ITERATION, level=c('TASKTASK', 'RESTREST', 'TASKREST')), y=RH_AI_ICC))+
+        geom_line(aes(group=SUBJID))+
+        labs(x = '', y = 'RH AI ICC Even/Odd Runs')+
+        #scale_colour_manual(values=CBIG_Palette)+
+        #scale_fill_manual(values=CBIG_Palette)+
+        geom_point(aes(fill=SUBJID), colour="black", pch=21, size=2.5)+
+        scale_y_continuous(limits = c(0.26, 1.0))+
+        scale_x_discrete(labels=c("Task-Task", "Rest-Rest", "Task-Rest")) +
+        theme_bw()+
+        theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())+
+        theme(axis.title = element_text(colour = "black", size=10), axis.text.y =element_text(colour = "black", angle = 90, hjust = 0.6), 
+              axis.text.x = element_text(colour = "black", hjust = 0.5, vjust=.8, size=10, angle = 0), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
+              legend.position ="none", legend.title=element_blank(), legend.text=element_blank(), 
+              legend.background = element_rect(fill="white", size=0.5) , axis.line = element_line(colour = "black", size = 1, linetype = "solid"), 
+              axis.ticks = element_line(colour = "black", size =1, linetype ="solid"), panel.border = element_blank(), panel.background = element_blank())
+      ggsave(filename = paste("NSD_SET8_2_RH_AI_ICC_ALL_EVENODD_230915.png"), width = 3.35, height = 3.35,
+             path = "C:/Users/maddy/Box/Autism_Hemispheric_Specialization/Figures/study3_figures/png_figures", dpi = 300)
+      
+      
 #--------------------------------MOST SPECIALIZED NETWORKS-----------------------------
 #Load ALL .csv
 study3 <- read.csv("C:/Users/maddy/Box/Autism_Hemispheric_Specialization/Figures/study3_figures/csv_files/study3_HCP_AI_entirety_230620.csv")
